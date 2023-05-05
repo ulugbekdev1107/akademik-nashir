@@ -12,10 +12,14 @@
   font-family: 'Roboto-regular';
   src: url(../fonts/Roboto-Regular.ttf);
 }
-
+@font-face {width: 80px;
+  height: 3px;
+  font-family: 'Roboto-medium';
+  src: url(../fonts/Roboto-Medium.ttf);
+}
 @font-face {
   font-family: 'Roboto-condensad';
-  src: url(../fonts/RobotoCondensed-Light.ttf);
+  src: url(../fonts/RobotoCondensed-Bold.ttf);
 }
 :root{
   --bs-firecolor:#FF7500;
@@ -25,9 +29,9 @@
   --bs-robotolight:'Roboto-light';
   --bs-robotoregular:'Roboto-regular';
   --bs-robotocondensad:'Roboto-condensad';
+  --bs-rm:'Roboto-medium';
 
 }
-
 body{
   max-width: 1440px;
   height: auto;
@@ -54,6 +58,7 @@ body{
   }
 /* d-flex */
 .header{
+  max-width: 1440px;
   border-top: 5px solid var(--bs-firecolor);
 }
 
@@ -71,20 +76,87 @@ body{
   list-style-type: none;
   width: 610px;
   height: 39px;
+  padding-right: 12px;
 }
-.nav-item{}
+.nav-item{
+  margin-right:12px;
+}
 .nav-link{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: ;
+  color: var(--bs-black);
+  font-family: var(--bs-rm);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1px;
 }
-
+.nav-link:hover{
+  color: var(--bs-firecolor);
+  border-bottom: 3px solid var(--bs-firecolor);
+}
+.btn-link{
+  padding: 12px 24px;
+  background: #FF7500;
+  opacity: 0.8;
+  border-radius: 4px;
+  font-family: var(--bs-rm);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
 .header-hero{
   background-color: var(--bs-dark);
   height: 488px;
 }
+.left-menu{
+  width: 387px;
+  height: 328px;
+  margin-top: 80px;
+}
+.hr-hero__border{
+  width: 80px;
+  height: 3px;
+  background: var(--bs-firecolor);
+  margin-bottom: 40px;
+}
 
+.header-hero__heading{
+  font-family: var(--bs-robotocondensad);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.5px;
+  color: var(--bs-white);
+  margin-bottom: 24px;
+
+}
+.header-hero__paragriph{
+  font-family: var(--bs-robotoregular);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  margin-bottom: 32px;
+}
+.header-hero__btn{
+  padding: 12px 24px;
+  background-color: var(--bs-firecolor);
+  font-family: var(--bs-robotoregular);
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+}
 .right-menu > .rm-thumbnail >.hero-thumbnail{
   margin-top: 40px;
   width: 510px;
