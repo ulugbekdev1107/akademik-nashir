@@ -365,6 +365,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
   color: var(--bs-dark);
+  transition: all 0.8s ease;
 }
 .fn-link:hover{
   color: var(--bs-firecolor);
